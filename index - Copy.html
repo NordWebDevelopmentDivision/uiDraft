@@ -5,75 +5,60 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="normalize.css">
    <link rel="stylesheet" href="app.css">
-   <link rel="stylesheet" href="frontPage.css">
   </head>
   
   <body>   
     <header class="main-header">
       <nav class="nav" id="myNav">
-        <div id="logo">
-          <a href="index.html">Nörd</a>
-        </div>
-
-        <div id="userImage">
-          <a href="javascript:void(0);" onclick="toggleUserMenu()"><img src="me.jpg" alt="The user"></a>
-          <ul id="userMenu" class="menu">
-            <li><a href="#">Mín síða</a></li>
-            <li><a href="#">Innskrá</a></li>
-            <li><a href="#">Útskrá</a></li>
-          </ul>
-        </div>
-
-        <div id="hamburgerIcon">
-          <a href="javascript:void(0);" onclick="toggleHamburgerMenu()">&#9776;</a>
-          <ul id="hamburgerMenu" class="menu">
-            <li>Um Nörd</li>
-            <ul>
-              <li><a href="#">Hvað er Nörd?</a></li>
-              <li><a href="#">Stjórn og miðstjórn</a></li>
-              <li><a href="#">Meðlimir</a></li>
-              <li><a href="#">Lög Nörd</a></li>
-              <li><a href="#">Kóðinn</a></li>
-              <li><a href="#">Myndir</a></li>
-            </ul>
-            <li>Upplýsingatorg</li>
-            <ul>
-              <li><a href="#">Lokaverkefni</a></li>
-              <li><a href="#">Glósubanki</a></li>
-            </ul>
-            <li><a href="#">Admin</a></li>
-            <li><a href="#">Mín síða</a></li>
-            <li><a href="#">Innskrá</a></li>
-            <li><a href="#">Útskrá</a></li>
-          </ul>
-        </div>
-
-        <div>
+          <a id="logo" href="index.html">Nörd</a>
+          <a id="userImage" href="javascript:void(0);" onclick="toggleUserMenu()"><img src="me.jpg" alt="The user"></a>
+          <a id="hamburgerIcon" href="javascript:void(0);" onclick="toggleHamburgerMenu()">&#9776;</a>
           <a href="javascript:void(0);" onclick="toggleAboutMenu()">Um Nörd</a>
-          <ul id="aboutMenu" class="menu">
-            <li><a href="#">Hvað er Nörd?</a></li>
-            <li><a href="#">Stjórn og miðstjórn</a></li>
-            <li><a href="#">Meðlimir</a></li>
-            <li><a href="#">Lög Nörd</a></li>
-            <li><a href="#">Kóðinn</a></li>
-            <li><a href="#">Myndir</a></li>
-          </ul>
-        </div>
-
-        <div>
           <a href="javascript:void(0);" onclick="toggleInfoMenu()">Upplýsingatorg</a>
-          <ul id="infoMenu" class="menu">
-            <li><a href="#">Lokaverkefni</a></li>
-            <li><a href="#">Glósubanki</a></li>
-          </ul>
-        </div>
-
-        <div>
           <a href="#">Admin</a>
-        </div>
       </nav>
     </header>   
- 
+
+    <ul id="hamburgerMenu" class="menu">
+      <li>Um Nörd</li>
+      <ul>
+        <li><a href="#">Hvað er Nörd?</a></li>
+        <li><a href="#">Stjórn og miðstjórn</a></li>
+        <li><a href="#">Meðlimir</a></li>
+        <li><a href="#">Lög Nörd</a></li>
+        <li><a href="#">Kóðinn</a></li>
+        <li><a href="#">Myndir</a></li>
+      </ul>
+      <li>Upplýsingatorg</li>
+      <ul>
+        <li><a href="#">Lokaverkefni</a></li>
+        <li><a href="#">Glósubanki</a></li>
+      </ul>
+      <li><a href="#">Admin</a></li>
+      <li><a href="#">Mín síða</a></li>
+      <li><a href="#">Innskrá</a></li>
+      <li><a href="#">Útskrá</a></li>
+    </ul>
+
+    <ul id="aboutMenu" class="menu">
+      <li><a href="#">Hvað er Nörd?</a></li>
+      <li><a href="#">Stjórn og miðstjórn</a></li>
+      <li><a href="#">Meðlimir</a></li>
+      <li><a href="#">Lög Nörd</a></li>
+      <li><a href="#">Kóðinn</a></li>
+      <li><a href="#">Myndir</a></li>
+    </ul>
+
+    <ul id="infoMenu" class="menu">
+      <li><a href="#">Lokaverkefni</a></li>
+      <li><a href="#">Glósubanki</a></li>
+    </ul>
+
+    <ul id="userMenu" class="menu">
+      <li><a href="#">Mín síða</a></li>
+      <li><a href="#">Innskrá</a></li>
+      <li><a href="#">Útskrá</a></li>
+    </ul>
 
     <div id="adContainer">
       <ul id="ads">
@@ -85,22 +70,6 @@
         <li><a href="http://www.example.com" target="_blank"><img src="https://dummyimage.com/300/aaaaaa/000000" alt="Auglýsing"/></a></li>
       </ul>
     </div>
-
-    <main>
-      <article>
-          <h2><a href="details.html">Titill fréttar</a></h2>
-          <p>Birt af: Höfundur</p>
-        <div>
-          <p>Heimilisfang</p>
-          <p>Póstnúmer og staður</p>
-          <p>Dagsetning viðburðar</p>
-          <p>Tímasetning viðburðar</p>
-          <p>Skráning hefst</p>
-          <p>Fjöldi sæta</p>
-        </div>
-        <p>Útgáfudagur</p>
-      </article>
-    </main>
 
     <footer class="main-footer">
       <address>

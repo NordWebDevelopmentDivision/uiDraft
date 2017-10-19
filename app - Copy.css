@@ -26,7 +26,6 @@ HEADER
 
 header {
   width: 100%;
-  height: 60px;
 }
 
 
@@ -39,23 +38,30 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
 }
 
-nav div {
+nav a {
+  padding: 14px 16px;
   margin: auto 0;
-  padding: 0 1.4em;
 }
 
 #userImage {
+  padding: 0;
   order: 1;
 }
 
-#userImage a img {
-  width: 54px;
-  height: 54px;
+#userImage img {
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
-  margin-top: 3px;
+  border: 2px solid green;
+  vertical-align: middle;
+  padding: 0;
+}
+
+/* For mobile, only display the first 3 elements */
+.nav a:not(:nth-child(-n+3)) {
+  display: none;
 }
 
 #hamburgerIcon {
@@ -71,18 +77,9 @@ MENUS
 .menu {
   display: none;
   flex-direction: column;
-  position: absolute;
-  margin: 20px 0;
-  padding: 5px 10px;
 }
 
-#userMenu {
-  margin-top: -3px;
-}
 
-#hamburgerMenu {
-  right: 0;
-}
 
 /*==============================
 ADS
@@ -94,7 +91,9 @@ ADS
   height: 80px;
   justify-content: space-around;
   overflow: hidden; /* Display only the top row */
+
   padding: 0;
+  /*border: 1px solid red;*/
 }
 
 #ads img {
@@ -130,27 +129,24 @@ COLORS
 ==============================*/
 
 header {
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(49, 181, 95);
 }
 
-nav div a {
-  color: #fff;
+nav {
+  /*background-color: blue;*/
 }
 
-nav div li {
-  color: #999;
+nav a {
+  /*border: 1px solid red;
+  background-color: orange;*/
 }
 
 .menu {
-  background-color: rgba(49, 49, 49, 0.9);
+  background-color: rgb(49, 181, 95);
 }
 
 footer {
-  background-color: rgb(49, 49, 49);
-}
-
-footer {
-  color: #fff;
+  background-color: rgb(49, 181, 95);
 }
 
 
@@ -159,14 +155,10 @@ footer {
 MEDIA QUERIES
 ==============================*/
 
-@media screen and (max-width: 599px) {
-  /* For mobile, only display the first 3 elements */
-  .nav div:not(:nth-child(-n+3)) {
-  display: none;
-  }
-}
-
 @media screen and (min-width: 600px) {
+  .nav a:not(:first-child) {
+    display: flex;
+  }
   #hamburgerIcon {
     display: none;
   }
@@ -178,8 +170,5 @@ MEDIA QUERIES
   }
   #ads img {
     width: 100px;
-  }
-  #userMenu {
-    right: 0;
   }
 }
