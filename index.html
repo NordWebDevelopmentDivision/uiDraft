@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="normalize.css">
    <link rel="stylesheet" href="app.css">
-   <link rel="stylesheet" href="frontPage.css">
+   <link rel="stylesheet" href="articles.css">
   </head>
   
   <body>   
@@ -41,10 +41,13 @@
               <li><a href="#">Lokaverkefni</a></li>
               <li><a href="#">Glósubanki</a></li>
             </ul>
-            <li><a href="#">Admin</a></li>
-            <li><a href="#">Mín síða</a></li>
-            <li><a href="#">Innskrá</a></li>
-            <li><a href="#">Útskrá</a></li>
+            <li>Notandi</li>
+            <ul>
+              <li><a href="#">Admin</a></li>
+              <li><a href="#">Mín síða</a></li>
+              <li><a href="#">Innskrá</a></li>
+              <li><a href="#">Útskrá</a></li>
+            </ul>
           </ul>
         </div>
 
@@ -87,21 +90,107 @@
     </div>
 
     <main>
-      <article>
-          <h2><a href="details.html">Titill fréttar</a></h2>
-          <p>Birt af: Höfundur</p>
-        <div>
-          <p>Heimilisfang</p>
-          <p>Póstnúmer og staður</p>
-          <p>Dagsetning viðburðar</p>
-          <p>Tímasetning viðburðar</p>
-          <p>Skráning hefst</p>
-          <p>Fjöldi sæta</p>
-        </div>
-        <p>Útgáfudagur</p>
-      </article>
+      <!--<div class="articles">-->
+      <article class="article">
+          <div id="title">
+            <h2><a href="details.html">Vísó í Nýherja</a></h2>
+          </div>
+          <div id="address">
+            <p id="street">Borgartún 31</p>
+            <p id="zip">104 Reykjavík</p>
+          </div>
+          <div id="mapsLink">
+            <a id="maps" href="#">kort</a>
+          </div>
+          <div id="eventTime">
+            <div id="weekday">
+              <p>Föstudagur</p>
+            </div>
+            <div id="date">
+              <p id="dayOfMonth">31</p>
+              <p id="month">September</p>
+            </div>
+            <div id="time">
+              <p id="startTime">17:00</p>
+            </div>
+          </div>         
+          <div id="registrationStarts">
+            <p id="capacity">50 sæti</p>
+            <p id="registration">Skráning hefst:</p>
+            <p id="startOfReg">29. September klukkan 13:37</p>
+          </div>
+          <div id="registrationBtn">
+            <button>Skrá mig</button>
+          </div>
+          <div id="publishInfo">
+            <p id="published">Birt mið. 27. Ágúst -  Sara Björk Másdóttir</p>
+          </div>
+        </article>
+        <!--</div>-->
     </main>
 
+
+
+
+
+<!--
+    <main>
+      <div id="articles">
+        <article class="wrapper">
+          <div id="title">
+            <h2><a href="details.html">Vísó í Nýherja</a></h2>
+          </div>
+          <div id="address">
+            <p id="address">Borgartún 31</p>
+            <p id="zip">104 Reykjavík</p>
+            <a id="maps" href="#">kort</a>
+          </div>
+          <div id="eventDate">
+            <div id="eventDateDiv">
+              <p id="dayOfMonth">31</p>
+              <p id="Month">Ágúst</p>
+            </div>
+          </div>
+          <div id="eventTime">
+            <p id="time">17:00</p>
+          </div>
+          <div id="registrationStarts">
+            <p id="registration">Skráning hefst:</p>
+            <p id="startOfReg">29. Ágúst klukkan 13:37</p>
+          </div>
+          <div id="eventCapacity">
+            <p>Fjöldi sæta:</p>
+            <p id="capacity">50</p>
+          </div>
+          <div id="publishInfo">
+            <p id="published">Birt þann 27. Ágúst -  Sara Björk Másdóttir</p>
+          </div>
+        </article>
+        <article>
+            <h2><a href="details.html">Titill fréttar</a></h2>
+            <p>Birt af: Höfundur</p>
+          <div>
+            <p>Heimilisfang</p>
+            <p>Póstnúmer og staður</p>
+            <p>Dagsetning viðburðar</p>
+            <p>Tímasetning viðburðar</p>
+            <p>Skráning hefst</p>
+            <p>Fjöldi sæta</p>
+          </div>
+          <p>Útgáfudagur</p>
+        </article>
+      </div>
+
+      <aside>
+        <h3>Bannlisti</h3>
+        <ul>
+          <li>bla</li>
+          <li>bla 2</li>
+          <li>bla 3</li>
+        </ul>
+      </aside>
+    </main>
+-->
     <footer class="main-footer">
       <address>
         Nemendafélagið Nörd<br />

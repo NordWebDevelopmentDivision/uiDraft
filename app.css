@@ -18,6 +18,15 @@ li {
   list-style: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
 
 
 /*==============================
@@ -74,6 +83,8 @@ MENUS
   position: absolute;
   margin: 20px 0;
   padding: 5px 10px;
+  border-left: 4px solid coral;
+  
 }
 
 #userMenu {
@@ -95,6 +106,7 @@ ADS
   justify-content: space-around;
   overflow: hidden; /* Display only the top row */
   padding: 0;
+
 }
 
 #ads img {
@@ -142,7 +154,7 @@ nav div li {
 }
 
 .menu {
-  background-color: rgba(49, 49, 49, 0.9);
+  background-color: rgba(49, 49, 49, 1);
 }
 
 footer {
@@ -174,9 +186,10 @@ MEDIA QUERIES
     margin-left: auto;
   }
   #ads {
-    height: 100px;
+    height: 120px;
   }
   #ads img {
+    margin-top: 10px;
     width: 100px;
   }
   #userMenu {
