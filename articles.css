@@ -15,134 +15,62 @@ ARTICLE
 ==============================*/
 
 #articles {
-	max-width: 400px;
+	max-width: 500px;
+	width: 100%;
 	margin: 0 auto;
-	
 }
 
-article {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	grid-row-gap: 20px;
-	border: 1px solid black;
-	width: 100%;
-	margin-bottom: 10px;
-	grid-template-areas:
-		". title title title title title ."
-		". address address address address mapsLink ."
-		". eventTime eventTime eventTime eventTime eventTime ."
-		". registrationBtn registrationBtn registrationBtn registrationBtn registrationBtn ."
-		". registrationStarts registrationStarts registrationStarts registrationStarts registrationStarts ."
-		". publishInfo publishInfo publishInfo publishInfo publishInfo .";
-}
-
-#eventTime {
-	display: grid;
-	grid-template-columns: 40% 60%;
-	border: 2px solid #000;
-	padding: 5px;
-	grid-template-areas:
-		"weekday weekday"
-		"date time";
-}
-
-#date, #time {
+.article {
+	margin: 10px auto;
 	text-align: center;
-}
-
-#date {
-	border-right: 1px solid #000;
-}
-
-#time {
-	margin: auto 0;
-	font-size: 2em;
-}
-
-#dayOfMonth {
-	font-size: 1.8em;
-	padding: 6px 2px;
-}
-
-#weekday p {
-	border-bottom: 1px solid #000;
-}
-
-
-p {
-	margin: 0;
-	padding: 0;
-}
-
-#eventCapacity p {
-	text-align: right;
-}
-
-#registrationBtn button {
 	width: 100%;
-	height: 40px;
-	border-radius: 2%;
+	min-height: 340px;
+	color: #fff;
+	/*padding-bottom: 20px;*/
 }
 
-#title h2 {
-	margin-bottom: 0;
+#published p {
+	font-style: italic;
+	text-align: left;
+	padding-left: 20px;
 }
-
-#publishInfo {
-	margin-bottom: 15px;
-}
-
-
-/*==============================
-GRID AREAS
-==============================*/
 
 #title {
-	text-align: center;
-	grid-area: title;
+	font-size: 1.6em;
 }
 
-#address {
-	grid-area: address;
-}
-#mapsLink {
-	grid-area: mapsLink;
+#title a {
+	text-decoration: underline;
+	color: #eee;
 }
 
-#eventTime {
-	grid-area: eventTime;
-	height: 100px;
+#countdown {
+	padding-top: 5px;
 }
 
-#date {
-	grid-area: date;
+#countdown p:first-child {
+	font-weight: bold;
 }
 
-#time {
-	grid-area: time;
+#countdown p:last-child {
+	font-size: 2em;
+	color: #333;
+	background: #fff;
+	display: inline-block;
+	padding: 0 5px;
+	margin-top: 0;
+	border: 2px solid #333;
 }
 
-#weekday {
-	grid-area: weekday;
+#newsPepp p {
+	padding-top: 40px;
+	font-size: 1.4em;
 }
 
-#registrationStarts {
-	grid-area: registrationStarts;
+#newsPepp p a {
+	text-decoration: underline;
+	color: #fff;
 }
-
-#registrationBtn {
-	grid-area: registrationBtn;
-}
-
-#eventCapacity {
-	grid-area: eventCapacity;
-}
-
-#publishInfo {
-	grid-area: publishInfo;
-}
-
-
 
 /*==============================
 COLORS
@@ -153,45 +81,12 @@ main {
 }
 
 article {
-	background-color: lightblue;
+	background-color: #444;
+	border: 3px solid coral;
+	border-radius: 5%;
 }
 
 
 /*==============================
 MEDIA QUERIES
 ==============================*/
-
-@media screen and (min-width: 600px) {
-  main {
-  	display: flex;
-	flex-direction: row;
-  }
-
-  #articles {
-  	border-right: solid 4px #999;
-  }
-
-  article {
-  	max-width: 500px;
-  	margin: 0 auto;
-  	grid-template-areas:
-		". title title title title title ."
-		". address address address address mapsLink ."
-		". . eventTime eventTime eventTime . ."
-		". . registrationBtn registrationBtn registrationBtn . ."
-		". registrationStarts registrationStarts registrationStarts registrationStarts registrationStarts ."
-		". publishInfo publishInfo publishInfo publishInfo publishInfo .";
-  }
-}
-
-@media screen and (min-width: 500px) {
-  article {
-  	grid-template-areas:
-		". title title title title title ."
-		". address address address address mapsLink ."
-		". . eventTime eventTime eventTime . ."
-		". . registrationBtn registrationBtn registrationBtn . ."
-		". registrationStarts registrationStarts registrationStarts registrationStarts registrationStarts ."
-		". publishInfo publishInfo publishInfo publishInfo publishInfo .";
-  }
-}
