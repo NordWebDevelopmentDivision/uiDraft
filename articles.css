@@ -18,15 +18,15 @@ ARTICLE
 	max-width: 500px;
 	width: 100%;
 	margin: 0 auto;
+	height: auto;
 }
 
 .article {
-	margin: 10px auto;
+	margin: 15px auto;
 	text-align: center;
 	width: 100%;
 	min-height: 340px;
 	color: #fff;
-	/*padding-bottom: 20px;*/
 }
 
 #published p {
@@ -36,41 +36,11 @@ ARTICLE
 }
 
 #title {
-	font-size: 1.6em;
+	font-size: 1.6em;	
+	padding-top: 20px;
 }
 
-#title a {
-	text-decoration: underline;
-	color: #eee;
-}
 
-#countdown {
-	padding-top: 5px;
-}
-
-#countdown p:first-child {
-	font-weight: bold;
-}
-
-#countdown p:last-child {
-	font-size: 2em;
-	color: #333;
-	background: #fff;
-	display: inline-block;
-	padding: 0 5px;
-	margin-top: 0;
-	border: 2px solid #333;
-}
-
-#newsPepp p {
-	padding-top: 40px;
-	font-size: 1.4em;
-}
-
-#newsPepp p a {
-	text-decoration: underline;
-	color: #fff;
-}
 
 /*==============================
 COLORS
@@ -82,10 +52,9 @@ main {
 
 article {
 	background-color: #444;
-	border: 3px solid coral;
-	border-radius: 5%;
+	border: 3px solid #444;
+	border-radius: 3%;
 }
-
 
 /*==============================
 MEDIA QUERIES

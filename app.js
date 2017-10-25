@@ -1,7 +1,22 @@
+var toggleAdminSubMenu = function() {
+  var menuList = document.getElementById("adminSubMenu");
+
+  if(menuList.style.display == "flex") { // if is menuList displayed, hide it
+    menuList.style.display = "none";
+    }
+  else { // if is menuList hidden, display it
+    menuList.style.display = "flex";
+  }
+}
+
 /* Toggle between displaying and hiding the hamburger menu */
 var toggleHamburgerMenu = function() {
   var menuList = document.getElementById("hamburgerMenu");
   
+  /* Close the admin sub menu */
+  var adminSubMenu = document.getElementById("adminSubMenu");
+  adminSubMenu.style.display = "none";
+
   /* Close the user menu */
   var userMenu = document.getElementById("userMenu");
   userMenu.style.display = "none";
@@ -25,6 +40,10 @@ var toggleHamburgerMenu = function() {
 /* Toggle between displaying and hiding the user menu */
 var toggleUserMenu = function() {
   var menuList = document.getElementById("userMenu");
+
+  /* Close the admin sub menu */
+  var adminSubMenu = document.getElementById("adminSubMenu");
+  adminSubMenu.style.display = "none";
 
   /* Close the hamburger menu */
   var hamburgerMenu = document.getElementById("hamburgerMenu");
@@ -50,6 +69,10 @@ var toggleUserMenu = function() {
 var toggleAboutMenu = function() {
   var menuList = document.getElementById("aboutMenu");
 
+  /* Close the admin sub menu */
+  var adminSubMenu = document.getElementById("adminSubMenu");
+  adminSubMenu.style.display = "none";
+
   /* Close the hamburger menu */
   var hamburgerMenu = document.getElementById("hamburgerMenu");
   hamburgerMenu.style.display = "none";
@@ -73,6 +96,10 @@ var toggleAboutMenu = function() {
 /* Toggle between displaying and hiding the info menu */
 var toggleInfoMenu = function() {
   var menuList = document.getElementById("infoMenu");
+
+  /* Close the admin sub menu */
+  var adminSubMenu = document.getElementById("adminSubMenu");
+  adminSubMenu.style.display = "none";
 
   /* Close the hamburger menu */
   var hamburgerMenu = document.getElementById("hamburgerMenu");

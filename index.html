@@ -15,10 +15,6 @@
           <a href="index.html">Nörd</a>
         </div>
 
-        <div id="admin">
-          <a href="#">Admin</a>
-        </div>
-
         <div id="userImage">
           <a href="javascript:void(0);" onclick="toggleUserMenu()"><img src="me.jpg" alt="The user"></a>
           <ul id="userMenu" class="menu">
@@ -31,6 +27,14 @@
         <div id="hamburgerIcon">
           <a href="javascript:void(0);" onclick="toggleHamburgerMenu()">&#9776;</a>
           <ul id="hamburgerMenu" class="menu">
+            <li>
+              <a id="adminSubMenuHeading" href="javascript:void(0);" onclick="toggleAdminSubMenu()">Admin</a>
+              <ul id="adminSubMenu" class="menu submenu">
+                <li><a href="#">Búa til viðburð</a></li>
+                <li><a href="#">Búa til frétt</a></li>
+                <li><a href="#">uppfæra auglýsingar</a></li>
+              </ul>
+            </li>
             <li>Um Nörd</li>
             <ul>
               <li><a href="#">Hvað er Nörd?</a></li>
@@ -47,7 +51,6 @@
             </ul>
             <li>Notandi</li>
             <ul>
-              <li><a href="#">Admin</a></li>
               <li><a href="#">Mín síða</a></li>
               <li><a href="#">Innskrá</a></li>
               <li><a href="#">Útskrá</a></li>
@@ -74,6 +77,10 @@
             <li><a href="#">Glósubanki</a></li>
           </ul>
         </div>
+
+        <div id="admin">
+          <a href="#">Admin</a>
+        </div>
       </nav>
     </header>   
  
@@ -91,95 +98,41 @@
 
     <main>
       <div id="articles">
-        <article class="article">
-            <div id="published">
-              <p>Birt mið. 27. Ágúst -  Sara Björk Másdóttir</p>
-            </div>
-            <div id="title">
-              <h2><a href="details.html">Vísindaferð í Hugsmiðjuna</a></h2>
-            </div>
-            <div id="countdown">
-              <p>Skráning opnar eftir: </p>
-              <p>2 daga 18 klst 46 mín 17 sek</p>
-            </div>
-          </article>
+        <a href="http://www.visir.is">
+          <article class="article" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(img/duck-hunt.jpg);">
+              <div id="published">
+                <p>Birt mið. 27. Ágúst -  Stjórnandi</p>
+              </div>
+              <div id="title">
+                <h2>Vísindaferð í Hugsmiðjuna</h2>
+              </div>
+            </article>
+          </a>
 
-          <article class="article">
-            <div id="published">
-              <p>Birt mið. 27. Ágúst -  Sara Björk Másdóttir</p>
-            </div>
-            <div id="title">
-              <h2><a href="details.html">30 ára afmæli Nörd</a></h2>
-            </div>
-            <div id="newsPepp">
-              <p>Lestu allt um það <a href="details.html">hér</a></p>
-            </div>
-          </article>
+          <a href="details.html">
+            <article class="article" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(img/matrix.jpg);">
+              <div id="published">
+                <p>Birt mið. 27. Ágúst -  Stjórnandi</p>
+              </div>
+              <div id="title">
+                <h2>30 ára afmæli Nörd</h2>
+              </div>
+            </article>
+          </a>
+
+          <a href="details.html">
+            <article class="article" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(img/game.jpg);">
+              <div id="published">
+                <p>Birt mið. 27. Ágúst -  Stjórnandi</p>
+              </div>
+              <div id="title">
+                <h2>Vísindaferð í CCP</h2>
+              </div>
+            </article>
+          </a>
         </div>
     </main>
 
-
-
-
-
-<!--
-    <main>
-      <div id="articles">
-        <article class="wrapper">
-          <div id="title">
-            <h2><a href="details.html">Vísó í Nýherja</a></h2>
-          </div>
-          <div id="address">
-            <p id="address">Borgartún 31</p>
-            <p id="zip">104 Reykjavík</p>
-            <a id="maps" href="#">kort</a>
-          </div>
-          <div id="eventDate">
-            <div id="eventDateDiv">
-              <p id="dayOfMonth">31</p>
-              <p id="Month">Ágúst</p>
-            </div>
-          </div>
-          <div id="eventTime">
-            <p id="time">17:00</p>
-          </div>
-          <div id="registrationStarts">
-            <p id="registration">Skráning hefst:</p>
-            <p id="startOfReg">29. Ágúst klukkan 13:37</p>
-          </div>
-          <div id="eventCapacity">
-            <p>Fjöldi sæta:</p>
-            <p id="capacity">50</p>
-          </div>
-          <div id="publishInfo">
-            <p id="published">Birt þann 27. Ágúst -  Sara Björk Másdóttir</p>
-          </div>
-        </article>
-        <article>
-            <h2><a href="details.html">Titill fréttar</a></h2>
-            <p>Birt af: Höfundur</p>
-          <div>
-            <p>Heimilisfang</p>
-            <p>Póstnúmer og staður</p>
-            <p>Dagsetning viðburðar</p>
-            <p>Tímasetning viðburðar</p>
-            <p>Skráning hefst</p>
-            <p>Fjöldi sæta</p>
-          </div>
-          <p>Útgáfudagur</p>
-        </article>
-      </div>
-
-      <aside>
-        <h3>Bannlisti</h3>
-        <ul>
-          <li>bla</li>
-          <li>bla 2</li>
-          <li>bla 3</li>
-        </ul>
-      </aside>
-    </main>
--->
     <footer class="main-footer">
       <address>
         Nemendafélagið Nörd<br />
@@ -191,56 +144,6 @@
       <p><strong>Reikningsnúmer:</strong> 311-26-5587</p>
       <p><small>&copy;2017 Nörd - Nemendafélag tölvunarfræði- og hugbúnaðarverkfræðinema</small></p>
     </footer>
-
-<!--
-    <div id="wrapper">
-      <ul id="menuList">
-        <li><a href="#">Stjórn Nörd</a></li>
-        <li><a href="#">Lög Nörd</a></li>
-        <li><a href="#">Afslættir</a></li>
-        <li><a href="#">Tölfræði</a></li>
-        <li><a href="#">Kóðinn</a></li>
-        <li><a href="#">Meðlimir</a></li>
-        <li><a href="#">Mín síða</a></li>
-        <li><a href="#">Útskrá</a></li>
-      </ul>
-      <main>
-        <article>
-          <header>
-            <h2><a href="details.html">Titill fréttar</a></h2>
-            <p>Birt af: Höfundur</p>
-          </header>
-          <div>
-            <p>Heimilisfang</p>
-            <p>Póstnúmer og staður</p>
-            <p>Dagsetning viðburðar</p>
-            <p>Tímasetning viðburðar</p>
-            <p>Skráning hefst</p>
-            <p>Fjöldi sæta</p>
-          </div>
-          <footer>Útgáfudagur</footer>
-        </article>
-      </main>
-      <div id="adDiv">
-        <h2>Styrktaraðilar</h2>
-        <ul id="ads">
-          <li><a href="http://www.example.com" target="_blank"><img src="me.jpg" alt="Auglýsing"/></a></li>
-          <li><a href="http://www.example.com" target="_blank"><img src="me.jpg" alt="Auglýsing"/></a></li>
-          <li><a href="http://www.example.com" target="_blank"><img src="me.jpg" alt="Auglýsing"/></a></li>
-        </ul>
-      </div>
-      <footer class="main-footer">
-        <address>
-          Nemendafélagið Nörd<br />
-          Dunhaga 7<br />
-          107 Reykjavík
-        </address>
-        <p><strong>Tölvupóstur:</strong> ft@hi.is</p>
-        <p><strong>Kennitala:</strong> 551087-1589</p>
-        <p><strong>Reikningsnúmer:</strong> 311-26-5587</p>
-        <p><small>&copy;2017 Nörd - Nemendafélag tölvunarfræði- og hugbúnaðarverkfræðinema</small></p>
-      </footer>
-    </div>-->
     <script src="app.js"></script>
   </body>
 </html>
