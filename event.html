@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="normalize.css">
    <link rel="stylesheet" href="app.css">
-   <link rel="stylesheet" href="articles.css">
+   <link rel="stylesheet" href="eventCSS.css">
   </head>
   
   <body>   
@@ -98,47 +98,68 @@
 
     
       <main>
-        <div id="newsItems">
-          <div id="articles">
-            <a href="event.html">
-              <article class="article" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(img/duck-hunt.jpg);">
-                <div id="published">
-                  <p>Birt mið. 27. Ágúst 2017 -  Stjórnandi</p>
-                </div>
-                <div id="title">
-                  <h2>Vísindaferð í Hugsmiðjuna</h2>
-                </div>
-                <p class="date">Föstudaginn 29. Ágúst klukkan 17:00</p>
-              </article>
-            </a>
-
-            <a href="newsItem.html">
-              <article class="article" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(img/SVGBrainLogo.svg);">
-                <div id="published">
-                  <p>Birt mið. 27. Ágúst 2017 -  Stjórnandi</p>
-                </div>
-                <div id="title">
-                  <h2>30 ára afmæli Nörd</h2>
-                </div>
-              </article>
-            </a>
-
-            <a href="event.html">
-              <article class="article" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/game.jpg);">
-                <div id="published">
-                  <p>Birt mið. 27. Ágúst 2017 -  Stjórnandi</p>
-                </div>
-                <div id="title">
-                  <h2>Vísindaferð í CCP</h2>
-                </div>
-                <p class="date">Föstudaginn 29. Ágúst klukkan 17:00</p>
-              </article>
-            </a>
+        <article>
+          <p class="infoText sectionInfo">Stjórnandi</p>
+          <section class="section adminSection">
+            <div id="editDelete">
+              <a href="#"><img src="img/delete.png" alt="delete symbol"></a>
+              <a href="#"><img src="img/edit.png" alt="edit symbol"></a>
+            </div>
+          </section>
+          <div id="published">
+            <p>Birt mið. 27. Ágúst -  Stjórnandi</p>
           </div>
-        </div>
-        <aside id="aside">
-          <p>Topp vísindamenn</p>
-        </aside>
+          <div id="title">
+            <h2>Vísindaferð í Hugsmiðjuna</h2>
+          </div>
+          <p class="timeOfEvent date">Föstudaginn 29. Ágúst klukkan 17:00</p>     
+          <p class="infoText">Skráning hefst eftir:</p>
+          <div id="countdown">
+            <p>2 daga 11 klst 56 mín 3 sek</p>
+          </div>
+          <div id="button">
+            <button disabled="true">Þú ert ekki innskráður</button>
+          </div>
+          <div id ="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Rhoncus urna neque viverra justo nec ultrices dui sapien. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Turpis massa tincidunt dui ut ornare lectus sit. Massa ultricies mi quis hendrerit dolor magna eget est. Turpis egestas pretium aenean pharetra magna ac. Scelerisque eu ultrices vitae auctor eu. Fusce ut placerat orci nulla pellentesque. Sed felis eget velit aliquet. Vivamus arcu felis bibendum ut tristique. Vel fringilla est ullamcorper eget nulla facilisi etiam. Dolor magna eget est lorem ipsum dolor. Sit amet nisl purus in mollis nunc sed id semper. Et egestas quis ipsum suspendisse. Iaculis nunc sed augue lacus viverra vitae. Dui faucibus in ornare quam.
+            </p>
+          </div>
+          <p class="infoText sectionInfo">Nánari upplýsingar</p>
+          <section class="section">
+            <div id="address">
+              <p>Nýherji <a href="https://ja.is/kort/?q=N%C3%BDherji&type=map&page=1&x=359153&y=408119&z=8&d=hashid%3A14bWq">
+                <img src="img/ja_logo.png" alt="já.is logo" />
+              </a></p>
+              <p>Borgartún 21, 104 Reykjavík</P>
+            </div>
+
+            <div class="registration regOpens">
+              <p class="infoText">Skráning hefst:</p>
+              <p class="date">Miðvikudaginn 27. Ágúst klukkan 13:37</p>
+            </div>
+            <div class="registration regCloses">
+              <p class="infoText">Skráningu lýkur:</p>
+              <p class="date">Föstudaginn 29. Ágúst klukkan 13:00</p>
+            </div>
+            <div class="capacityInfo">
+              <p>Sætafjöldi: <span>50</span></p>
+              <p>Laus sæti: <span>50</span></p>
+              <p>Biðlisti: <span>0</span></p>
+            </div>
+          </section>
+
+          <p class="infoText sectionInfo">Skráningarlisti</p>
+          <section class="section">
+            <p>Ólafur Georg Gylfason</p>
+            <p>Ólafur Georg Gylfason</p>
+            <p>Ólafur Georg Gylfason</p>
+            <p>Ólafur Georg Gylfason</p>
+            <p>Ólafur Georg Gylfason</p>
+            <p>Ólafur Georg Gylfason</p>
+          </section>
+          
+        </article>
       </main>
       
     
